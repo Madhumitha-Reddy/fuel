@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fuel-booking.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Fuel Delivery Logo">
+        </div>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+    
+            </ul>
+            <div class="profile">
+                <img src="client.png" alt="Profile" class="profile-img">
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <section class="dashboard">
+            <div class="dashboard-container">
+                <h2 class="dashboard-heading">Dashboard</h2>
+                <ul class="dashboard-links">
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Lists</a></li>
+                    <li><a href="#">Coupons</a></li>
+                    <li><a href="#">Reorder</a></li>
+                    <li><a href="#">Other Services</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+        
+      
+                <div class="social-icons">
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <div class="fuel-booking-wrapper">
+            <section class="fuel-booking-container">
+                <h2 class="booking-heading">Your Location</h2>
+                <input type="text" id="address"class="address-input" placeholder="Enter your address">
+
+                <h2 class="fuel-type-heading">Fuel Type</h2>
+                <div class="fuel-options">
+                    <input type="radio" id="petrol" name="fuelType" value="Petrol" checked> Petrol
+                    <input type="radio" id="diesel" name="fuelType" value="Diesel"> Diesel
+                    <input type="radio" id="ev" name="fuelType" value="EV"> EV Charging
+                </div>
+
+                <h2 class="fuel-heading">Quantity</h2>
+                <div class="quantity-selector">
+                    <input type="number" id="quantity" min="1" value="1" class="quantity-input">
+                    <span class="litres-text">Litres</span>
+                </div>
+            
+                    <div class="summary-item">
+                        <span>Price per Litre:</span>
+                        <span>$0.00</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Quantity:</span>
+                        <span>1 Litre</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Delivery Fee:</span>
+                        <span>$5.00</span>
+                    </div>
+                    <div class="summary-item total">
+                        <span>Total:</span>
+                        <span>$5.00</span>
+                    </div>
+
+                
+                    <button class="payment-btn" id="proceedBtn" >Proceed to Payment</button>
+            </section>
+        </div>
+
+
+         <div class="fuel-image">
+            <img src="googlemap.webp" alt="Fuel Delivery">
+        </div>
+    </div>
+
+    <script src="fuel-booking.js"></script>
+</body>
+</html>

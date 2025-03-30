@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Boy - Track User Location</title>
+    <link rel="stylesheet" href="delivery-boy-tracking.css">
+    <script src="https://maps.googleapis.com/maps/api/js?AIzaSyBjQBAC4TKk59uH7GanMLuBxV9mQnagryQ&callback=initMap&libraries=places&v=weekly" defer></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Fuel Delivery Logo">
+        </div>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+    
+            </ul>
+            <div class="profile">
+                <img src="client.png" alt="Profile" class="profile-img">
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Track User Location</h2>
+        <div id="map" class="map"></div>
+        <div class="order-status">
+            <p><strong>Delivery Status: </strong><span id="orderStatus">Pending</span></p>
+            <p><strong>Estimated Arrival: </strong><span id="arrivalTime">Calculating...</span></p>
+        </div>
+
+        <button id="startDeliveryBtn" class="start-btn">Start Delivery</button>
+        
+        <input type="hidden" id="userLat" value="">
+        <input type="hidden" id="userLng" value="">
+
+    </div>
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script> 
+    <script src="delivery-boy-tracking.js"></script>
+</body>
+</html>

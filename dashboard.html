@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Fuel Delivery Logo">
+        </div>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+    
+            </ul>
+            <div class="profile">
+                <img src="client.png" alt="Profile" class="profile-img">
+            </div>
+        </div>
+    </nav>
+
+
+<div class="main-container">
+    <section class="dashboard">
+        <div class="dashboard-container">
+            <h2 class="dashboard-heading">Dashboard</h2>
+            <ul class="dashboard-links">
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Order Status</a></li>
+                <li><a href="#">Lists</a></li>
+                <li><a href="#">Coupons</a></li>
+                <li><a href="#">Reorder</a></li>
+                <li><a href="#">Other Services</a></li>
+                <button onclick="logout()">Logout</button>
+            </ul>
+    
+         
+            <div class="social-icons">
+                <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <div class="content-container">
+        <section class="fuel-delivery-container">
+            <div class="fuel-delivery">
+                <h2 class="fuel-heading">Fuel Delivery</h2>
+                <div class="service-boxes">
+                    <div class="service-box">
+                        <button class="service-btn large-btn" id="bookNowBtn">Book Now</button>
+                    </div>
+                    <div class="service-box">
+                        <button class="service-btn large-btn">Advance Booking</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="other-services-container">
+            <h2 class="other-services-heading">Other Services</h2>
+            <div class="other-services">
+                <div class="service-card">
+                    <img src="service.jpeg" alt="Service 1">
+                    <h3>Roadside Assistance</h3>
+                    <p>Quick and reliable help for vehicle <br>breakdowns anytime, anywhere.</p>
+                    <button class="book-now-btn">Book Now</button>
+                </div>
+                <div class="service-card">
+                    <img src="service.jpeg" alt="Service 2">
+                    <h3>Roadside Assistance</h3>
+                    <p>Quick and reliable help for vehicle <br>breakdowns anytime, anywhere.</p>
+                    <button class="book-now-btn">Book Now</button>
+                </div>
+                <div class="service-card">
+                    <img src="service.jpeg" alt="Service 3">
+                    <h3>Roadside Assistance</h3>
+                    <p>Quick and reliable help for vehicle <br>breakdowns anytime, anywhere.</p>
+                    <button class="book-now-btn">Book Now</button>
+                </div>
+                <div class="service-card">
+                    <img src="service.jpeg" alt="Service 4">
+                    <h3>Roadside Assistance</h3>
+                    <p>Quick and reliable help for vehicle <br>breakdowns anytime, anywhere.</p>
+                    <button class="book-now-btn">Book Now</button>
+                </div>
+                <div class="service-card">
+                    <img src="service.jpeg" alt="Service 5">
+                    <h3>Roadside Assistance</h3>
+                    <p>Quick and reliable help for vehicle <br>breakdowns anytime, anywhere.</p>
+                    <button class="book-now-btn">Book Now</button>
+                </div>
+                <div class="service-card">
+                    <img src="service.jpeg" alt="Service 6">
+                    <h3>Roadside Assistance</h3>
+                    <p>Quick and reliable help for vehicle <br>breakdowns anytime, anywhere.</p>
+                    <button class="book-now-btn">Book Now</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #FBFBFB;
+    padding: 15px 30px;
+    height: 80px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 100px;
+    font-weight: bold;
+    max-width: 100%;
+}
+
+.logo img {
+    width: 230px;
+    height: auto;
+    display: block;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: 25%;
+    gap: 40px;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff9800;
+}
+
+
+.profile-img {
+    width: 45px; 
+    height: 45px; 
+    border-radius: 50%;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 80px auto 20px; 
+}
+
+
+.container h2 {
+    font-size: 26px; 
+    font-weight: bold;
+}
+
+
+.orders {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.order-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.order-card h3 {
+    font-size: 22px;
+    margin: 0;
+    color: #333;
+}
+
+.order-card p {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.accept {
+    background-color: #28a745;
+    color: white;
+}
+
+.decline {
+    background-color: #dc3545;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}

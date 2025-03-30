@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracking Order</title>
+    <link rel="stylesheet" href="tracking-order.css">
+    <script src="https://maps.googleapis.com/maps/api/js?AIzaSyBjQBAC4TKk59uH7GanMLuBxV9mQnagryQ&callback=initMap" async defer></script>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+
+   
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Fuel Delivery Logo">
+        </div>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+    
+            </ul>
+            <div class="profile">
+                <img src="client.png" alt="Profile" class="profile-img">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Google Map -->
+    <div id="map"></div>
+
+    <!-- Tracking Section -->
+    <div class="tracking-container">
+        <div class="tracking-header">
+            🚚 Tracking Order
+        </div>
+        <p class="invoice-text">Invoice # <span id="invoice-number">Loading...</span></p>
+
+        <p class="arrival-time">Arriving in <span id="eta">Calculating...</span></p>
+
+        <div class="icons">
+            <div class="icon" id="callDelivery">
+                📞
+                <p>Call</p>
+            </div>
+            <div class="icon" id="messageDelivery">
+                💬
+                <p>Message</p>
+            </div>
+        </div>
+        <button class="order-details">Order Details</button>
+    </div>
+      <!-- Order Placed Message -->
+    <div class="order-placed-message" id="orderPlacedMsg">
+        ✅ Your Order Has Been Placed Successfully!
+    </div>
+
+        <!-- Hidden fields for location tracking -->
+        <input type="hidden" id="userLat">
+        <input type="hidden" id="userLng">
+        <input type="hidden" id="deliveryLat">
+        <input type="hidden" id="deliveryLng">
+    
+
+    <script src="tracking-order.js"></script>
+</body>
+</html>
+

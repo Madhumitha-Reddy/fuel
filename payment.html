@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Fuel Delivery Logo">
+        </div>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+    
+            </ul>
+            <div class="profile">
+                <img src="client.png" alt="Profile" class="profile-img">
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <section class="dashboard">
+            <div class="dashboard-container">
+                <h2 class="dashboard-heading">Dashboard</h2>
+                <ul class="dashboard-links">
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Lists</a></li>
+                    <li><a href="#">Coupons</a></li>
+                    <li><a href="#">Reorder</a></li>
+                    <li><a href="#">Other Services</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+        
+            
+                <div class="social-icons">
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+     
+        <section class="payment-container">
+          
+            <div class="coupon-box">
+                <h2 class="coupon-heading">Apply Coupon</h2>
+                <input type="text" class="coupon-input" placeholder="Enter Coupon Code">
+                <button class="apply-coupon-btn">Apply</button>
+            </div>
+
+
+            <h2 class="payment-heading">Preferred Payment</h2>
+            <div class="payment-options">
+                <label><input type="radio" name="payment" value="cod"> Pay on Delivery (Cash/UPI)</label>
+            </div>
+
+            <p class="upi-info">UPI &raquo; Pay by any UPI app</p>
+
+                    
+            <div class="upi-payment-options">
+                <label class="upi-option">
+                    <input type="radio" name="upi-payment" value="phonepe">
+                    <img src="phonepay.jpg" alt="PhonePe">
+                    <span>PhonePe UPI</span>
+                </label>
+
+                <label class="upi-option">
+                    <input type="radio" name="upi-payment" value="paytm">
+                    <img src="paytm.png" alt="Paytm">
+                    <span>Paytm</span>
+                </label>
+
+                <label class="upi-option">
+                    <input type="radio" name="upi-payment" value="gpay">
+                    <img src="googlepay.jpg" alt="Google Pay">
+                    <span>Google Pay</span>
+                </label>
+            </div>
+           
+            <button class="place-order-btn" id="placeOrderBtn" >Place Order</button>
+
+                 
+            <img src="deliveryimage.webp" alt="Payment Illustration" class="payment-image">
+
+        </section>
+
+    </div>
+    <script src="payment.js"></script>
+
+</body>
+</html>
